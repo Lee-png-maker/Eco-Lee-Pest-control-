@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +9,9 @@
 <meta name="description" content="Eco Lee Pest Control provides pest inspection and pest control services for homes, offices and businesses. Contact us for a quote.">
 
 <meta name="theme-color" content="#16823b">
+
+<!-- WhatsApp / Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
 *{
@@ -154,6 +156,10 @@ nav a:hover{
 
 .btn:hover{
   transform:translateY(-2px);
+}
+
+.btn i{
+  margin-right:6px;
 }
 
 .btn-white{
@@ -543,6 +549,10 @@ textarea:focus{
   margin-bottom:8px;
 }
 
+.contact-card strong i{
+  margin-right:6px;
+}
+
 .contact-card a{
   word-break:break-word;
 }
@@ -561,6 +571,11 @@ footer strong{
   color:#fff;
 }
 
+footer i{
+  color:#25D366;
+  margin-right:4px;
+}
+
 /* WHATSAPP */
 
 .whatsapp{
@@ -574,9 +589,14 @@ footer strong{
   place-items:center;
   background:#25D366;
   color:#fff;
-  font-size:27px;
+  font-size:28px;
   box-shadow:0 8px 25px rgba(0,0,0,.25);
   z-index:2000;
+  transition:.2s;
+}
+
+.whatsapp:hover{
+  transform:scale(1.08);
 }
 
 /* MOBILE */
@@ -676,17 +696,17 @@ footer strong{
 const BUSINESS_NAME = "Eco Lee Pest Control";
 
 const WHATSAPP_LINK =
-"https://wa.me/message/27688585355";
+"https://wa.me/27688685355";
 
 const WHATSAPP_NUMBER =
-"068 858 5355";
+"068 868 5355";
 
 const YOCO_LINK =
 "https://pay.yoco.com/lee-mobile-servises-and-constraction";
 
 /* Used for pre-filled WhatsApp booking messages */
 const WHATSAPP_DIRECT =
-"https://wa.me/27688585355";
+"https://wa.me/27688685355";
 </script>
 
 <!-- HEADER -->
@@ -705,6 +725,7 @@ const WHATSAPP_DIRECT =
       <a href="#services" onclick="closeMenu()">Services</a>
       <a href="#pests" onclick="closeMenu()">Pests</a>
       <a href="#prices" onclick="closeMenu()">Prices</a>
+      <a href="#about" onclick="closeMenu()">About</a>
       <a href="#booking" onclick="closeMenu()">Get Quote</a>
       <a href="#contact" onclick="closeMenu()">Contact</a>
     </nav>
@@ -735,11 +756,11 @@ const WHATSAPP_DIRECT =
     <div class="buttons">
 
       <a href="#booking" class="btn btn-white">
-        Get a Pest Control Quote
+        🔍 Get a Pest Control Quote
       </a>
 
       <a id="heroWhatsApp" href="#" class="btn btn-light">
-        💬 WhatsApp Us
+        <i class="fab fa-whatsapp"></i> WhatsApp Us
       </a>
 
     </div>
@@ -1063,7 +1084,7 @@ const WHATSAPP_DIRECT =
         </p>
 
         <a href="#booking" class="btn btn-green">
-          Request A Quote
+          🔍 Request A Quote
         </a>
 
       </div>
@@ -1248,7 +1269,8 @@ const WHATSAPP_DIRECT =
         </div>
 
         <button type="submit" class="btn submit">
-          🐜 Request Quote On WhatsApp
+          <i class="fab fa-whatsapp"></i>
+          Request Quote On WhatsApp
         </button>
 
       </form>
@@ -1314,19 +1336,25 @@ const WHATSAPP_DIRECT =
 
       <div class="contact-card">
 
-        <strong>📱 Phone / WhatsApp</strong>
+        <strong>
+          <i class="fab fa-whatsapp"></i>
+          Phone / WhatsApp
+        </strong>
 
         <a id="phoneLink" href="#">
-          068 858 5355
+          068 868 5355
         </a>
 
       </div>
 
       <div class="contact-card">
 
-        <strong>💬 WhatsApp Booking</strong>
+        <strong>
+          <i class="fab fa-whatsapp"></i>
+          WhatsApp Booking
+        </strong>
 
-        <a id="contactWhatsApp" href="#" target="_blank">
+        <a id="contactWhatsApp" href="#" target="_blank" rel="noopener">
           Chat With Eco Lee Pest Control
         </a>
 
@@ -1336,7 +1364,7 @@ const WHATSAPP_DIRECT =
 
         <strong>💳 Payment</strong>
 
-        <a id="contactYoco" href="#" target="_blank">
+        <a id="contactYoco" href="#" target="_blank" rel="noopener">
           Pay With Yoco
         </a>
 
@@ -1359,7 +1387,8 @@ const WHATSAPP_DIRECT =
 
   <br><br>
 
-  📱 068 858 5355
+  <i class="fab fa-whatsapp"></i>
+  068 868 5355
 
   <br><br>
 
@@ -1374,9 +1403,10 @@ const WHATSAPP_DIRECT =
   class="whatsapp"
   href="#"
   target="_blank"
-  aria-label="WhatsApp"
+  rel="noopener"
+  aria-label="WhatsApp Eco Lee Pest Control"
 >
-  💬
+  <i class="fab fa-whatsapp"></i>
 </a>
 
 <script>
@@ -1410,7 +1440,7 @@ document.getElementById("contactYoco").href =
   YOCO_LINK;
 
 document.getElementById("phoneLink").href =
-  "tel:+27688585355";
+  "tel:+27688685355";
 
 document.getElementById("year").textContent =
   new Date().getFullYear();
