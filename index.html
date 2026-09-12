@@ -1,1 +1,1499 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eco Lee Pest Control | Pest Control Services</title>
+
+<meta name="description" content="Eco Lee Pest Control provides pest inspection and pest control services for homes, offices and businesses. Contact us for a quote.">
+
+<meta name="theme-color" content="#16823b">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f5faf6;
+  color:#17231b;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#fff;
+  box-shadow:0 2px 14px rgba(0,0,0,.08);
+}
+
+.nav{
+  max-width:1150px;
+  margin:auto;
+  min-height:72px;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:23px;
+  font-weight:900;
+  color:#16823b;
+}
+
+.logo span{
+  color:#17231b;
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+nav a{
+  font-size:14px;
+  font-weight:700;
+}
+
+nav a:hover{
+  color:#16823b;
+}
+
+.menu-btn{
+  display:none;
+  border:0;
+  background:#16823b;
+  color:#fff;
+  border-radius:8px;
+  padding:9px 13px;
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+  min-height:620px;
+  display:flex;
+  align-items:center;
+  padding:70px 20px;
+  color:#fff;
+  background:
+    linear-gradient(rgba(4,63,26,.83),rgba(4,63,26,.83)),
+    linear-gradient(135deg,#16823b,#063d1d);
+}
+
+.hero-inner{
+  max-width:1150px;
+  width:100%;
+  margin:auto;
+}
+
+.badge{
+  display:inline-block;
+  padding:8px 15px;
+  border-radius:30px;
+  background:rgba(255,255,255,.13);
+  border:1px solid rgba(255,255,255,.25);
+  font-size:14px;
+  font-weight:800;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  max-width:800px;
+  font-size:clamp(42px,7vw,76px);
+  line-height:1.02;
+  margin-bottom:22px;
+}
+
+.hero h1 span{
+  color:#a8e063;
+}
+
+.hero p{
+  max-width:690px;
+  font-size:19px;
+  color:#e4f4e8;
+  margin-bottom:30px;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 22px;
+  border-radius:9px;
+  border:0;
+  font-weight:800;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.btn-white{
+  background:#fff;
+  color:#16823b;
+}
+
+.btn-green{
+  background:#16823b;
+  color:#fff;
+}
+
+.btn-light{
+  background:#dff3e4;
+  color:#09672b;
+}
+
+/* GENERAL */
+
+section{
+  padding:75px 20px;
+}
+
+.container{
+  max-width:1150px;
+  margin:auto;
+}
+
+.heading{
+  max-width:700px;
+  margin:0 auto 45px;
+  text-align:center;
+}
+
+.heading small{
+  color:#16823b;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.heading h2{
+  font-size:clamp(30px,5vw,45px);
+  margin:8px 0 12px;
+}
+
+.heading p{
+  color:#657268;
+}
+
+/* SERVICES */
+
+.services{
+  background:#fff;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  background:#f7fbf8;
+  border:1px solid #dce9df;
+  border-radius:16px;
+  padding:27px;
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.icon{
+  width:56px;
+  height:56px;
+  display:grid;
+  place-items:center;
+  border-radius:14px;
+  background:#e3f3e7;
+  font-size:28px;
+  margin-bottom:16px;
+}
+
+.card h3{
+  color:#116d31;
+  margin-bottom:8px;
+}
+
+.card p{
+  color:#66736a;
+  font-size:14px;
+  margin-bottom:15px;
+}
+
+.starting{
+  color:#16823b;
+  font-weight:900;
+}
+
+/* WHY */
+
+.why{
+  background:#edf7ef;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.why-card{
+  background:#fff;
+  border-radius:15px;
+  padding:25px;
+  text-align:center;
+}
+
+.why-card .big{
+  font-size:34px;
+  margin-bottom:8px;
+}
+
+.why-card h3{
+  color:#116d31;
+  margin-bottom:6px;
+}
+
+.why-card p{
+  color:#657268;
+  font-size:14px;
+}
+
+/* PESTS */
+
+.pests{
+  background:#fff;
+}
+
+.pest-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.pest{
+  padding:22px;
+  border-radius:13px;
+  background:#f7fbf8;
+  border:1px solid #dce9df;
+  text-align:center;
+  font-weight:800;
+}
+
+.pest .emoji{
+  display:block;
+  font-size:35px;
+  margin-bottom:8px;
+}
+
+/* PRICES */
+
+.prices{
+  background:#f5faf6;
+}
+
+.price-list{
+  max-width:850px;
+  margin:auto;
+  display:grid;
+  gap:10px;
+}
+
+.price-row{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  padding:17px 20px;
+  background:#fff;
+  border:1px solid #dce9df;
+  border-radius:10px;
+}
+
+.price-row span:last-child{
+  color:#16823b;
+  font-weight:900;
+  white-space:nowrap;
+}
+
+/* ABOUT */
+
+.about{
+  background:#fff;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:40px;
+  align-items:center;
+}
+
+.about h2{
+  font-size:42px;
+  margin-bottom:18px;
+}
+
+.about p{
+  color:#657268;
+  margin-bottom:15px;
+}
+
+.about-box{
+  background:#116d31;
+  color:#fff;
+  padding:35px;
+  border-radius:20px;
+}
+
+.about-box h3{
+  font-size:27px;
+  margin-bottom:15px;
+}
+
+.about-box ul{
+  list-style:none;
+}
+
+.about-box li{
+  padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,.16);
+}
+
+/* SAFETY */
+
+.safety{
+  background:#edf7ef;
+}
+
+.safety-box{
+  max-width:850px;
+  margin:auto;
+  background:#fff;
+  padding:30px;
+  border-radius:18px;
+  border:1px solid #dce9df;
+}
+
+.safety-box h3{
+  color:#116d31;
+  margin-bottom:12px;
+}
+
+.safety-box p{
+  color:#657268;
+}
+
+.safety-box ul{
+  margin-top:15px;
+  padding-left:20px;
+  color:#657268;
+}
+
+/* BOOKING */
+
+.booking{
+  background:#fff;
+}
+
+.booking-box{
+  max-width:880px;
+  margin:auto;
+  background:#f5faf6;
+  border:1px solid #dce9df;
+  padding:30px;
+  border-radius:20px;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.field.full{
+  grid-column:1/-1;
+}
+
+label{
+  font-size:13px;
+  font-weight:800;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  padding:13px;
+  border:1px solid #cbd9ce;
+  border-radius:8px;
+  background:#fff;
+  font:inherit;
+  outline:none;
+}
+
+textarea{
+  min-height:115px;
+  resize:vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:#16823b;
+}
+
+.submit{
+  width:100%;
+  margin-top:18px;
+  background:#16823b;
+  color:#fff;
+  font-size:16px;
+}
+
+/* PAYMENT */
+
+.payment{
+  background:#dff2e4;
+  text-align:center;
+}
+
+.payment-box{
+  max-width:750px;
+  margin:auto;
+}
+
+.payment h2{
+  font-size:35px;
+  margin-bottom:12px;
+}
+
+.payment p{
+  color:#59685e;
+  margin-bottom:22px;
+}
+
+/* CONTACT */
+
+.contact{
+  background:#06351a;
+  color:#fff;
+}
+
+.contact .heading h2{
+  color:#fff;
+}
+
+.contact .heading p{
+  color:#c8dbce;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.contact-card{
+  padding:25px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:15px;
+}
+
+.contact-card strong{
+  display:block;
+  color:#a8e063;
+  margin-bottom:8px;
+}
+
+.contact-card a{
+  word-break:break-word;
+}
+
+/* FOOTER */
+
+footer{
+  background:#031d0d;
+  color:#aebdb3;
+  text-align:center;
+  padding:25px 20px;
+  font-size:13px;
+}
+
+footer strong{
+  color:#fff;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#25D366;
+  color:#fff;
+  font-size:27px;
+  box-shadow:0 8px 25px rgba(0,0,0,.25);
+  z-index:2000;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  nav{
+    display:none;
+    position:absolute;
+    top:72px;
+    left:0;
+    width:100%;
+    background:#fff;
+    padding:16px 20px;
+    flex-direction:column;
+    align-items:flex-start;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+  }
+
+  nav.show{
+    display:flex;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  .service-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .why-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .pest-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:560px){
+
+  section{
+    padding:55px 15px;
+  }
+
+  .hero{
+    min-height:570px;
+  }
+
+  .hero h1{
+    font-size:46px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .service-grid,
+  .why-grid,
+  .pest-grid,
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .field.full{
+    grid-column:auto;
+  }
+
+  .booking-box{
+    padding:20px;
+  }
+
+  .about h2{
+    font-size:34px;
+  }
+
+  .price-row{
+    font-size:14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- BUSINESS SETTINGS -->
+<script>
+const BUSINESS_NAME = "Eco Lee Pest Control";
+
+const WHATSAPP_LINK =
+"https://wa.me/message/27688585355";
+
+const WHATSAPP_NUMBER =
+"068 858 5355";
+
+const YOCO_LINK =
+"https://pay.yoco.com/lee-mobile-servises-and-constraction";
+
+/* Used for pre-filled WhatsApp booking messages */
+const WHATSAPP_DIRECT =
+"https://wa.me/27688585355";
+</script>
+
+<!-- HEADER -->
+<header>
+
+  <div class="nav">
+
+    <a href="#home" class="logo">
+      Eco Lee <span>Pest Control</span>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="mainNav">
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#services" onclick="closeMenu()">Services</a>
+      <a href="#pests" onclick="closeMenu()">Pests</a>
+      <a href="#prices" onclick="closeMenu()">Prices</a>
+      <a href="#booking" onclick="closeMenu()">Get Quote</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </nav>
+
+  </div>
+
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+  <div class="hero-inner">
+
+    <div class="badge">
+      🌿 Professional Pest Control Services
+    </div>
+
+    <h1>
+      Take Back
+      <span>Your Space.</span>
+    </h1>
+
+    <p>
+      Pest inspection and control services for homes, offices, businesses
+      and other properties. Contact Eco Lee Pest Control for a quotation.
+    </p>
+
+    <div class="buttons">
+
+      <a href="#booking" class="btn btn-white">
+        Get a Pest Control Quote
+      </a>
+
+      <a id="heroWhatsApp" href="#" class="btn btn-light">
+        💬 WhatsApp Us
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+
+  <div class="container">
+
+    <div class="heading">
+
+      <small>Our Services</small>
+
+      <h2>Pest Control For Your Property</h2>
+
+      <p>
+        Tell us what pest problem you are experiencing and we can discuss
+        the appropriate service for your property.
+      </p>
+
+    </div>
+
+    <div class="service-grid">
+
+      <div class="card">
+        <div class="icon">🪳</div>
+        <h3>Cockroach Control</h3>
+        <p>
+          Treatment options for cockroach problems in homes and other
+          properties.
+        </p>
+        <div class="starting">Quote Required</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🐀</div>
+        <h3>Rodent Control</h3>
+        <p>
+          Help identify and manage rat and mouse activity around your
+          property.
+        </p>
+        <div class="starting">Quote Required</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🛏️</div>
+        <h3>Bed Bug Control</h3>
+        <p>
+          Pest-control solutions for suspected bed bug activity.
+        </p>
+        <div class="starting">Quote Required</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🐜</div>
+        <h3>Ant Control</h3>
+        <p>
+          Help manage unwanted ant activity inside and around your property.
+        </p>
+        <div class="starting">Quote Required</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🪲</div>
+        <h3>Termite Control</h3>
+        <p>
+          Inspection and treatment enquiries for termite activity and
+          property protection.
+        </p>
+        <div class="starting">Inspection Required</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🦟</div>
+        <h3>Mosquito Control</h3>
+        <p>
+          Help reduce mosquito activity around residential and commercial
+          areas.
+        </p>
+        <div class="starting">Quote Required</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🕷️</div>
+        <h3>Spider Control</h3>
+        <p>
+          Pest-control services for unwanted spider activity.
+        </p>
+        <div class="starting">Quote Required</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🐝</div>
+        <h3>Wasp & Bee Enquiries</h3>
+        <p>
+          Contact us before attempting to remove nests or swarms yourself.
+        </p>
+        <div class="starting">Assessment Required</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔍</div>
+        <h3>Pest Inspection</h3>
+        <p>
+          Discuss visible signs of pests and determine what service may be
+          required.
+        </p>
+        <div class="starting">Request Inspection</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why">
+
+  <div class="container">
+
+    <div class="heading">
+
+      <small>Why Eco Lee</small>
+
+      <h2>A Practical Approach To Pest Problems</h2>
+
+      <p>
+        We focus on understanding the problem before recommending a service.
+      </p>
+
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="big">🔍</div>
+        <h3>Inspect</h3>
+        <p>Understand where and how the pest problem is occurring.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="big">🌿</div>
+        <h3>Consider</h3>
+        <p>Discuss practical treatment options for the property.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="big">📱</div>
+        <h3>Easy Booking</h3>
+        <p>Request an appointment through WhatsApp.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="big">🏠</div>
+        <h3>Property Focused</h3>
+        <p>Services for residential and commercial properties.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PEST TYPES -->
+<section class="pests" id="pests">
+
+  <div class="container">
+
+    <div class="heading">
+
+      <small>Pest Problems</small>
+
+      <h2>What Pest Are You Dealing With?</h2>
+
+      <p>
+        Select a pest when requesting your quotation.
+      </p>
+
+    </div>
+
+    <div class="pest-grid">
+
+      <div class="pest">
+        <span class="emoji">🪳</span>
+        Cockroaches
+      </div>
+
+      <div class="pest">
+        <span class="emoji">🐀</span>
+        Rats & Mice
+      </div>
+
+      <div class="pest">
+        <span class="emoji">🛏️</span>
+        Bed Bugs
+      </div>
+
+      <div class="pest">
+        <span class="emoji">🐜</span>
+        Ants
+      </div>
+
+      <div class="pest">
+        <span class="emoji">🪲</span>
+        Termites
+      </div>
+
+      <div class="pest">
+        <span class="emoji">🦟</span>
+        Mosquitoes
+      </div>
+
+      <div class="pest">
+        <span class="emoji">🕷️</span>
+        Spiders
+      </div>
+
+      <div class="pest">
+        <span class="emoji">🐝</span>
+        Wasps / Bees
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PRICES -->
+<section class="prices" id="prices">
+
+  <div class="container">
+
+    <div class="heading">
+
+      <small>Price Guide</small>
+
+      <h2>Pest Control Pricing</h2>
+
+      <p>
+        Pest-control pricing depends on the pest, property size, severity
+        and treatment requirements. Request a quote for an accurate price.
+      </p>
+
+    </div>
+
+    <div class="price-list">
+
+      <div class="price-row">
+        <span>Cockroach Treatment</span>
+        <span>Quote Required</span>
+      </div>
+
+      <div class="price-row">
+        <span>Rodent Control</span>
+        <span>Quote Required</span>
+      </div>
+
+      <div class="price-row">
+        <span>Bed Bug Treatment</span>
+        <span>Quote Required</span>
+      </div>
+
+      <div class="price-row">
+        <span>Ant Treatment</span>
+        <span>Quote Required</span>
+      </div>
+
+      <div class="price-row">
+        <span>Termite Inspection</span>
+        <span>Quote Required</span>
+      </div>
+
+      <div class="price-row">
+        <span>Mosquito Control</span>
+        <span>Quote Required</span>
+      </div>
+
+      <div class="price-row">
+        <span>General Pest Inspection</span>
+        <span>Request Quote</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+  <div class="container">
+
+    <div class="about-grid">
+
+      <div>
+
+        <small style="color:#16823b;font-weight:900;">
+          ABOUT ECO LEE PEST CONTROL
+        </small>
+
+        <h2>
+          A cleaner, more comfortable pest-free environment starts here.
+        </h2>
+
+        <p>
+          Eco Lee Pest Control provides pest-control and inspection services
+          for residential and commercial properties.
+        </p>
+
+        <p>
+          We aim to provide practical solutions based on the pest problem,
+          property and treatment requirements.
+        </p>
+
+        <a href="#booking" class="btn btn-green">
+          Request A Quote
+        </a>
+
+      </div>
+
+      <div class="about-box">
+
+        <h3>Our Process</h3>
+
+        <ul>
+          <li>✓ Tell us about the pest problem</li>
+          <li>✓ Provide property details</li>
+          <li>✓ Discuss inspection requirements</li>
+          <li>✓ Receive a quotation</li>
+          <li>✓ Confirm your service</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SAFETY -->
+<section class="safety">
+
+  <div class="container">
+
+    <div class="heading">
+
+      <small>Important Information</small>
+
+      <h2>Pest Treatment Safety</h2>
+
+      <p>
+        Pest-control work should always be carried out carefully and according
+        to the requirements of the treatment product being used.
+      </p>
+
+    </div>
+
+    <div class="safety-box">
+
+      <h3>Before treatment</h3>
+
+      <p>
+        Customers should tell us about children, pets, sensitive areas,
+        food preparation areas and any other relevant property conditions.
+      </p>
+
+      <ul>
+        <li>Follow the treatment instructions provided.</li>
+        <li>Keep people and pets away from treated areas when required.</li>
+        <li>Do not touch or disturb treatment areas unnecessarily.</li>
+        <li>Follow any ventilation or re-entry instructions provided.</li>
+        <li>Ask questions if you are unsure about the treatment.</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+
+  <div class="container">
+
+    <div class="heading">
+
+      <small>Get A Quote</small>
+
+      <h2>Request Pest Control Service</h2>
+
+      <p>
+        Complete the form and your request will be prepared for WhatsApp.
+      </p>
+
+    </div>
+
+    <div class="booking-box">
+
+      <form id="pestForm">
+
+        <div class="form-grid">
+
+          <div class="field">
+            <label>Your Name</label>
+
+            <input
+              type="text"
+              id="customerName"
+              placeholder="Enter your name"
+              required
+            >
+          </div>
+
+          <div class="field">
+            <label>Phone Number</label>
+
+            <input
+              type="tel"
+              id="customerPhone"
+              placeholder="e.g. 068 123 4567"
+              required
+            >
+          </div>
+
+          <div class="field">
+            <label>Property Type</label>
+
+            <select id="propertyType" required>
+              <option value="">Select property</option>
+              <option>House</option>
+              <option>Apartment</option>
+              <option>Office</option>
+              <option>Business</option>
+              <option>Warehouse</option>
+              <option>Complex</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Pest Problem</label>
+
+            <select id="pestType" required>
+              <option value="">Select pest</option>
+              <option>Cockroaches</option>
+              <option>Rats / Mice</option>
+              <option>Bed Bugs</option>
+              <option>Ants</option>
+              <option>Termites</option>
+              <option>Mosquitoes</option>
+              <option>Spiders</option>
+              <option>Wasps / Bees</option>
+              <option>Not Sure</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Preferred Date</label>
+
+            <input
+              type="date"
+              id="date"
+            >
+          </div>
+
+          <div class="field">
+            <label>Preferred Time</label>
+
+            <input
+              type="time"
+              id="time"
+            >
+          </div>
+
+          <div class="field full">
+            <label>Property Address / Area</label>
+
+            <input
+              type="text"
+              id="address"
+              placeholder="Enter your address or area"
+              required
+            >
+          </div>
+
+          <div class="field full">
+            <label>Describe The Problem</label>
+
+            <textarea
+              id="notes"
+              placeholder="Example: I have seen cockroaches in the kitchen and bathroom..."
+            ></textarea>
+          </div>
+
+        </div>
+
+        <button type="submit" class="btn submit">
+          🐜 Request Quote On WhatsApp
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PAYMENT -->
+<section class="payment">
+
+  <div class="container">
+
+    <div class="payment-box">
+
+      <h2>Pay With Yoco</h2>
+
+      <p>
+        Once your quotation has been confirmed, use the Yoco payment page
+        for your payment.
+      </p>
+
+      <a
+        id="yocoButton"
+        href="#"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-green"
+      >
+        💳 Pay With Yoco
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="heading">
+
+      <small style="color:#a8e063;">
+        Contact Eco Lee
+      </small>
+
+      <h2>
+        Let's Deal With Your Pest Problem
+      </h2>
+
+      <p>
+        Contact us for a quotation or pest-control enquiry.
+      </p>
+
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+
+        <strong>📱 Phone / WhatsApp</strong>
+
+        <a id="phoneLink" href="#">
+          068 858 5355
+        </a>
+
+      </div>
+
+      <div class="contact-card">
+
+        <strong>💬 WhatsApp Booking</strong>
+
+        <a id="contactWhatsApp" href="#" target="_blank">
+          Chat With Eco Lee Pest Control
+        </a>
+
+      </div>
+
+      <div class="contact-card">
+
+        <strong>💳 Payment</strong>
+
+        <a id="contactYoco" href="#" target="_blank">
+          Pay With Yoco
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+  <strong>Eco Lee Pest Control</strong>
+
+  <br>
+
+  Professional Pest Control Services
+
+  <br><br>
+
+  📱 068 858 5355
+
+  <br><br>
+
+  © <span id="year"></span> Eco Lee Pest Control.
+  All rights reserved.
+
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a
+  id="floatingWhatsApp"
+  class="whatsapp"
+  href="#"
+  target="_blank"
+  aria-label="WhatsApp"
+>
+  💬
+</a>
+
+<script>
+
+/* MOBILE MENU */
+
+function toggleMenu(){
+  document.getElementById("mainNav").classList.toggle("show");
+}
+
+function closeMenu(){
+  document.getElementById("mainNav").classList.remove("show");
+}
+
+
+/* CONTACT LINKS */
+
+document.getElementById("heroWhatsApp").href =
+  WHATSAPP_DIRECT;
+
+document.getElementById("floatingWhatsApp").href =
+  WHATSAPP_DIRECT;
+
+document.getElementById("contactWhatsApp").href =
+  WHATSAPP_LINK;
+
+document.getElementById("yocoButton").href =
+  YOCO_LINK;
+
+document.getElementById("contactYoco").href =
+  YOCO_LINK;
+
+document.getElementById("phoneLink").href =
+  "tel:+27688585355";
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+
+/* PEST CONTROL QUOTE FORM */
+
+document.getElementById("pestForm").addEventListener(
+  "submit",
+  function(event){
+
+    event.preventDefault();
+
+    const name =
+      document.getElementById("customerName").value.trim();
+
+    const phone =
+      document.getElementById("customerPhone").value.trim();
+
+    const property =
+      document.getElementById("propertyType").value;
+
+    const pest =
+      document.getElementById("pestType").value;
+
+    const date =
+      document.getElementById("date").value ||
+      "Not specified";
+
+    const time =
+      document.getElementById("time").value ||
+      "Not specified";
+
+    const address =
+      document.getElementById("address").value.trim();
+
+    const notes =
+      document.getElementById("notes").value.trim() ||
+      "No additional details provided.";
+
+    const message =
+`🌿 ECO LEE PEST CONTROL
+PEST CONTROL QUOTE REQUEST
+
+👤 Customer:
+${name}
+
+📱 Phone:
+${phone}
+
+🏠 Property:
+${property}
+
+🐜 Pest Problem:
+${pest}
+
+📅 Preferred Date:
+${date}
+
+⏰ Preferred Time:
+${time}
+
+📍 Address / Area:
+${address}
+
+📝 Problem Details:
+${notes}
+
+Please provide me with a quotation.
+
+Thank you.`;
+
+    const url =
+      WHATSAPP_DIRECT +
+      "?text=" +
+      encodeURIComponent(message);
+
+    window.open(url,"_blank");
+
+  }
+);
+
+</script>
+
+</body>
+</html>
